@@ -1,0 +1,1 @@
+<?php// masa aktif cookiesetcookie ("loggedin", "", time() - 3600);echo "Anda sudah logout.<br>";echo "<a href=\"login.html\">Login</a>.";?>

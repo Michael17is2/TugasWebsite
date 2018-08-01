@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+
+<link rel="stylesheet" type="text/css" href="E:\DES\web\MYS website" />
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+       <style>
+      .navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+      </style>
+
+
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    -ms-flex: 50%; /* IE 10 */
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+</style>
+<body>
+
+
+<body background="main page bg.jpg">
+      <div><font style="font-size:600%" face="stencil"><center><a href="mysfd.html">M.Y.S</a></center></font></div>
+      <div><font style="font-size:200%"><center>Fashion Designer</center></font></div>
+      <div><font style="font-size:200%"><marquee>WELCOME TO MYS FASHION GALLERY ^o^</marquee></font></div>
+      <h1><center>CHECK THIS OUT</center></h1>
+             <font style="font-size:200%"></center>
+
+
+<div class="navbar">
+             <a class="mysfd.html" href="/">Home</a>
+
+             <div class="dropdown">
+                  <button class="dropbtn">Fashion Gallery 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                  <div class="dropdown">
+                    <button class="dropbtn">
+                    <center>
+                    <a href="myfashiongallery.html">
+                    My Fashion Gallery
+                    </a>
+                    </center>
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                       <div class="dropdown-content">
+                        <a href="p1.html">Promnite Sutomo1 2018</a>
+                        <a href="p2.html">Leeney Phan wedding</a>
+                        <a href="p3.html">Leeney Phan Phang Teh</a>
+                        <a href="p4.html">CNY 2018</a>
+                       </div> 
+                  </div> 
+                  </div>
+              </div> 
+
+             <a href="aboutfashion.html">About Fashion</a>
+             <a href="design.html">Design</a>
+            <div class="dropdown">
+              <button class="dropbtn">Contact 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="mycontact.html">My Contact</a>
+                <a href="ac.html">Ask-Comment</a>
+                
+              </div>
+            </div> 
+</div>
+
+
+<!-- Header -->
+<div class="header" id="myHeader">
+ 
+  <button class="btn" onclick="one()">1</button>
+  <button class="btn active" onclick="two()">2</button>
+  <button class="btn" onclick="four()">4</button>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="lppt1.jpg" style="width:100%">
+    <img src="lppt2.jpg" style="width:100%">
+   
+   
+  </div>
+  <div class="column">
+   <img src="lppt1.jpg" style="width:100%">
+    <img src="lppt2.jpg" style="width:100%">
+   
+  </div>  
+  <div class="column">
+   <img src="lppt1.jpg" style="width:100%">
+    <img src="lppt2.jpg" style="width:100%">
+   
+  </div>
+  <div class="column">
+   <img src="lppt1.jpg" style="width:100%">
+    <img src="lppt2.jpg" style="width:100%">
+   
+  </div>
+</div>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.msFlex = "100%";  // IE10
+        elements[i].style.flex = "100%";
+    }
+}
+
+// Two images side by side
+function two() {
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.msFlex = "50%";  // IE10
+        elements[i].style.flex = "50%";
+    }
+}
+
+// Four images side by side
+function four() {
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.msFlex = "25%";  // IE10
+        elements[i].style.flex = "25%";
+    }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+ <div>
+          <p><center>-M.Y.S OFFICIAL WEBSITE-</center></p>
+          <p><center>-Est.2018-</center></p>
+          </div>
+
+
+</body>
+</html>

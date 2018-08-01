@@ -1,0 +1,1 @@
+<?phpinclude("config.php");// konek ke server MYSQL$link = mysql_connect($server, $db_user, $db_pass)or die ("Could not connect to mysql because ".mysql_error());// pilih databasemysql_select_db($database)or die ("Could not select database because ".mysql_error());// cek kesamaan username

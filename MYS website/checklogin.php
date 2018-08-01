@@ -1,0 +1,1 @@
+<?php if (!isset($_COOKIE['loggedin'])) die("Anda sedang tidak login! Silakan login terlebih dahulu");$mysite_username = $HTTP_COOKIE_VARS["mysite_username"];echo "Anda login sebagai $mysite_username."; ?>
